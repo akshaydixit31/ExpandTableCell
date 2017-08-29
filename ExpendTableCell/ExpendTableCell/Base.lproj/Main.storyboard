@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,38 +28,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="71.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hM4-Cc-cki">
-                                                    <rect key="frame" x="0.0" y="0.0" width="406" height="72"/>
-                                                    <color key="backgroundColor" red="0.83414481664782603" green="0.87322947024477293" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLj-Xm-v90">
+                                                    <rect key="frame" x="175" y="20.666666666666664" width="64" height="29.999999999999993"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                    <state key="normal" title="Button">
-                                                        <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="CellData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EM4-6I-hg1"/>
-                                                    </connections>
-                                                </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2kp-Wd-VFr">
-                                                    <rect key="frame" x="344" y="11" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="afK-Gb-EPf"/>
-                                                        <constraint firstAttribute="height" constant="50" id="osM-Hs-zm9"/>
-                                                    </constraints>
-                                                </imageView>
+                                                    <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="hM4-Cc-cki" secondAttribute="bottom" constant="-0.3333333333333286" id="OZs-Ry-MCo"/>
-                                                <constraint firstItem="2kp-Wd-VFr" firstAttribute="leading" relation="lessThanOrEqual" secondItem="NJr-Kx-vnq" secondAttribute="leading" constant="344" id="QI4-c6-50l"/>
-                                                <constraint firstAttribute="trailing" secondItem="2kp-Wd-VFr" secondAttribute="trailing" constant="20" id="TAE-9k-Oi8"/>
-                                                <constraint firstAttribute="trailing" secondItem="hM4-Cc-cki" secondAttribute="trailing" constant="8" id="Uah-IW-5HA"/>
-                                                <constraint firstItem="hM4-Cc-cki" firstAttribute="leading" secondItem="NJr-Kx-vnq" secondAttribute="leading" id="cHC-J6-lr8"/>
-                                                <constraint firstItem="2kp-Wd-VFr" firstAttribute="centerY" secondItem="NJr-Kx-vnq" secondAttribute="centerY" id="o5x-LJ-H6d"/>
-                                                <constraint firstItem="hM4-Cc-cki" firstAttribute="top" secondItem="NJr-Kx-vnq" secondAttribute="top" id="oa3-U6-iDK"/>
+                                                <constraint firstItem="xLj-Xm-v90" firstAttribute="centerX" secondItem="NJr-Kx-vnq" secondAttribute="centerX" id="0FO-Ni-bEr"/>
+                                                <constraint firstItem="xLj-Xm-v90" firstAttribute="centerY" secondItem="NJr-Kx-vnq" secondAttribute="centerY" id="wU2-G3-UB4"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="btnImage" destination="2kp-Wd-VFr" id="lgG-N4-ker"/>
-                                            <outlet property="cellButton" destination="hM4-Cc-cki" id="2AE-fO-Edi"/>
+                                            <outlet property="nameLabel" destination="xLj-Xm-v90" id="PyU-er-eaV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -80,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-581.15942028985512" y="-37.5"/>
+            <point key="canvasLocation" x="-1842" y="-294"/>
         </scene>
     </scenes>
 </document>
